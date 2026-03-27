@@ -1,10 +1,21 @@
 body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #0f172a; 
-    color: rgb(255, 255, 255);
-     font-size: 2rem;
-    margin-bottom: 10px;
+    color: white;
+    background-color: #002FA7;
+}
+
+/* Header (meny ikon) */
+header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.meny {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: aqua;
 }
 
 /* Centrera allt */
@@ -16,16 +27,22 @@ body {
     align-items: center;
 }
 
-p {
-    margin-bottom: 30px;
-    color:#cbd5f5
+/* Titel */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
+p {
+    margin-bottom: 30px;
+    color: #e0e7ff;
+}
 
+/* Sökbox */
 .search-box {
     display: flex;
 }
-/* Hur själva sök boxwn ser ut*/
+
 .search-box input {
     padding: 12px;
     font-size: 1rem;
@@ -34,22 +51,55 @@ p {
     width: 250px;
     border-radius: 8px 0 0 8px;
 }
-/*sök knappen för serier*/
+
 .search-box button {
     padding: 12px 20px;
     font-size: 1rem;
     border: none;
-    background-color: #3b82f6;
-    color: white;
+    background-color: white;
+    color: #002FA7;
     cursor: pointer;
     border-radius: 0 8px 8px 0;
 }
 
-/* Hover */
 .search-box button:hover {
-    background-color: #2563eb;
+    background-color: #e0e7ff;
+    width: 65px;
+  height: 65px;
 }
 
-.meny {
-    color: pink;
+/* Bakgrundsbild */
+body {
+    background-image: url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Gör så texten syns bättre */
+.container {
+    background-color: rgba(0, 47, 167, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Kontakt-sektion */
+.kontakt {
+    background-color: #001f7a;
+    padding: 50px;
+    text-align: center;
+}
+
+.kontakt h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.kontakt p {
+    margin: 10px 0;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
 }
