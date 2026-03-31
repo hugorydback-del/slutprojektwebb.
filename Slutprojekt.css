@@ -3,7 +3,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     background-color: #002FA7;
+
+    /* Bakgrundsbild */
+    background-image: url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 /* Header (meny ikon) */
 header {
@@ -15,7 +22,7 @@ header {
 .meny {
     font-size: 1.5rem;
     cursor: pointer;
-    color: aqua;
+    color: #e0e7ff;;
 }
 
 /* Centrera allt */
@@ -25,6 +32,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* overlay */
+    background-color: rgba(0, 47, 167, 0.7);
+    padding: 40px;
+    border-radius: 20px;
 }
 
 /* Titel */
@@ -60,46 +72,11 @@ p {
     color: #002FA7;
     cursor: pointer;
     border-radius: 0 8px 8px 0;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .search-box button:hover {
     background-color: #e0e7ff;
-    width: 65px;
-  height: 65px;
-}
-
-/* Bakgrundsbild */
-body {
-    background-image: url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Gör så texten syns bättre */
-.container {
-    background-color: rgba(0, 47, 167, 0.7);
-    padding: 40px;
-    border-radius: 20px;
-}
-
-/* Kontakt-sektion */
-.kontakt {
-    background-color: #001f7a;
-    padding: 50px;
-    text-align: center;
-}
-
-.kontakt h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.kontakt p {
-    margin: 10px 0;
-}
-
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
+    transform: translateY(-2px);
 }
