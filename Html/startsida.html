@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeriesScore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Slutprojekt.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <span class="logo">SeriesScore</span>
+            <nav>
+                <ul>
+                    <li><a href="startsida.html" class="active">Sök</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hitta din nästa serie</h1>
+            <p>Sök efter TV-serier och se om de är värda att kolla</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Sök efter en serie...">
+                <button id="searchBtn">Sök</button>
+            </div>
+        </section>
+        <section class="results">
+            <h2 id="resultsHeading"></h2>
+            <div id="resultsGrid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>SeriesScore &copy; 2025 — Data från TMDB</p>
+    </footer>
+
+    <script src="../javascript/slutprojekt.js"></script>
+</body>
+</html>
